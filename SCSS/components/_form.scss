@@ -1,0 +1,42 @@
+// components/_form.scss
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+#kontak {
+  form {
+    div {
+      margin-bottom: $spacing-md;
+
+      input, textarea {
+        @include input-base; // Ini mixin input
+      }
+
+      // Style untuk rating
+      &:has(input[type="range"]) {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @for $i from 1 through 5 {
+          span:nth-child(#{$i + 1}) { 
+            @if $i <= 3 {
+              color: #888;
+            } @else {
+              color: $accent-color;
+            }
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    button[type="submit"] {
+      background-color: $accent-color;
+      color: #fff;
+      border: none;
+      padding: $spacing-sm $spacing-lg;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+}

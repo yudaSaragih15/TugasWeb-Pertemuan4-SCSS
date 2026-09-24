@@ -1,0 +1,23 @@
+// layout/_header.scss
+
+// Dua baris ini WAJIB ada di paling atas:
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+header {
+  @include flex-between; // Sekarang dia sudah tahu flex-between itu apa
+  background-color: var(--panel-bg);
+  padding: $spacing-md $spacing-xl;
+
+  nav {
+    ul {
+      display: flex;
+      gap: $spacing-lg;
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+  }
+}

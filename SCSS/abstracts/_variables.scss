@@ -1,0 +1,23 @@
+// Warna (dari CSS :root)
+$primary-color: #0a1128;
+$accent-color: #fca311;
+$bg-color: #f1f5f9;
+$panel-bg: #ffffff;
+$text-color: #333333;
+
+// Warna untuk dark mode (akan dipakai nanti di themes)
+$dark-primary: #f1f5f9;
+$dark-bg: #0a1128;
+$dark-panel: #1f2937;
+$dark-text: #ffffff;
+
+// Spacing (ambil dari padding/margin yang ada)
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 30px;
+
+// Font & border
+$font-family: 'Poppins', sans-serif;
+$border-radius: 8px;

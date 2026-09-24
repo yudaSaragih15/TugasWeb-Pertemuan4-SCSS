@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as *;
+
+footer {
+  padding: $spacing-md;
+  text-align: center;
+  background-color: var(--panel-bg);
+  color: var(--text-color);
+}

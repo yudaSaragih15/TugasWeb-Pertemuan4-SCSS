@@ -1,0 +1,19 @@
+// layout/_grid.scss
+@use '../abstracts/variables' as *;
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header { grid-area: header; }
+main { 
+  grid-area: main; 
+  padding: $spacing-lg; // Ini yang bikin konten gak nempel ke pinggir
+}
+footer { grid-area: footer; }

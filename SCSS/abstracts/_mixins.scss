@@ -1,0 +1,21 @@
+// abstracts/_mixins.scss
+@use 'variables' as *;
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin panel-box {
+  background-color: var(--panel-bg);
+  padding: $spacing-lg;
+  border-radius: $border-radius;
+}
+
+@mixin input-base {
+  width: 100%;
+  padding: $spacing-sm;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

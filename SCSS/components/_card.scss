@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+article, aside {
+  @include panel-box; // Ini yang bikin kotak putihnya
+}
+
+aside {
+  border-left: 4px solid $accent-color; // Ini garis oranye di sebelah kiri
+}
