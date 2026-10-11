@@ -2,9 +2,9 @@
 @use '../abstracts/mixins' as *;
 
 article, aside {
-  @include panel-box; // Ini yang bikin kotak putihnya
+  @include panel-box;
 }
 
 aside {
-  border-left: 4px solid $accent-color; // Ini garis oranye di sebelah kiri
+  border-left: 4px solid $accent-color;
 }
