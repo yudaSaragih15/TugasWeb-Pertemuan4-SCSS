@@ -1,4 +1,3 @@
-// layout/_grid.scss
 @use '../abstracts/variables' as *;
 
 body {
@@ -14,6 +13,6 @@ body {
 header { grid-area: header; }
 main { 
   grid-area: main; 
-  padding: $spacing-lg; // Ini yang bikin konten gak nempel ke pinggir
+  padding: $spacing-lg;
 }
 footer { grid-area: footer; }
